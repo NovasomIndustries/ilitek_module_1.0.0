@@ -4,11 +4,11 @@ ilitek_ts-objs := 	ilitek_main.o \
 					ilitek_update.o \
 					ilitek_tool.o
 
-KU = imx_4.1.43_1.0.5
-KP = imx_4.1.15_1.2.0_ga_1.0.5
+KU = imx_4.1.43
+KP = imx_4.1.15_1.2.0_ga
 #-I/Devel/NOVAsom_SDK/FileSystem/P_Base/output/host/bin
-KERNELDIRP ?= /Devel/NOVAsom_SDK/Kernel/linux-$(KP)
-KERNELDIRU ?= /Devel/NOVAsom_SDK/Kernel/linux-$(KU)
+KERNELDIRP ?= /Devel/NOVAsdk2019.01/Kernel/linux-$(KP)
+KERNELDIRU ?= /Devel/NOVAsdk2019.01/Kernel/linux-$(KU)
 EXTRA_CFLAGS = -DEXPORT_SYMTAB
 PWD       := $(shell pwd)
 DEST = /lib/modules/$(CURRENT)/kernel/$(MDIR)

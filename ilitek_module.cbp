@@ -5,30 +5,30 @@
 		<Option title="ilitek_module" />
 		<Option makefile_is_custom="1" />
 		<Option pch_mode="2" />
-		<Option compiler="arm-elf-gcc" />
+		<Option compiler="novasom_32bit_gcc_compiler" />
 		<Build>
 			<Target title="P">
 				<Option output="bin/P/ilitek_module" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
-				<Option compiler="arm-elf-gcc" />
+				<Option compiler="novasom_32bit_gcc_compiler" />
 				<Compiler>
 					<Add option="-g" />
 				</Compiler>
 				<MakeCommands>
-					<Build command="export ARCH=arm; export CROSS_COMPILE=arm-linux-; export PATH=$PATH:/Devel/NOVAsom_SDK/FileSystem/P_Base/output/host/bin;$make -f $makefile $target" />
-					<CompileFile command="export ARCH=arm; export CROSS_COMPILE=arm-linux-; export PATH=$PATH:/Devel/NOVAsom_SDK/FileSystem/P_Base/output/host/bin;$make -f $makefile $target" />
+					<Build command="export ARCH=arm; export CROSS_COMPILE=arm-linux-; export PATH=$PATH:/Devel/NOVAsdk2019.01/Xcompiler/arch32-arm-gcc-5.5.0/bin;$make -f $makefile $target" />
+					<CompileFile command="export ARCH=arm; export CROSS_COMPILE=arm-linux-; export PATH=$PATH:/Devel/NOVAsdk2019.01/Xcompiler/arch32-arm-gcc-5.5.0/bin;$make -f $makefile $target" />
 					<Clean command="$make -f $makefile clean" />
 					<DistClean command="$make -f $makefile distclean$target" />
-					<AskRebuildNeeded command="export ARCH=arm; export CROSS_COMPILE=arm-linux-; export PATH=$PATH:/Devel/NOVAsom_SDK/FileSystem/P_Base/output/host/bin;$make -f $makefile $target" />
-					<SilentBuild command="export ARCH=arm; export CROSS_COMPILE=arm-linux-; export PATH=$PATH:/Devel/NOVAsom_SDK/FileSystem/P_Base/output/host/bin;$make -f $makefile $target &gt; $(CMD_NULL)" />
+					<AskRebuildNeeded command="export ARCH=arm; export CROSS_COMPILE=arm-linux-; export PATH=$PATH:/Devel/NOVAsdk2019.01/Xcompiler/arch32-arm-gcc-5.5.0/bin;$make -f $makefile $target" />
+					<SilentBuild command="export ARCH=arm; export CROSS_COMPILE=arm-linux-; export PATH=$PATH:/Devel/NOVAsdk2019.01/Xcompiler/arch32-arm-gcc-5.5.0/bin;$make -f $makefile $target &gt; $(CMD_NULL)" />
 				</MakeCommands>
 			</Target>
 			<Target title="U">
 				<Option output="bin/U/ilitek_module" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Release/" />
 				<Option type="1" />
-				<Option compiler="arm-elf-gcc" />
+				<Option compiler="novasom_32bit_gcc_compiler" />
 				<Compiler>
 					<Add option="-O2" />
 				</Compiler>
